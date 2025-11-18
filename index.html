@@ -7,9 +7,8 @@
   <style>
     body {
       display: flex;
-      flex-direction: column;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       height: 100vh;
       margin: 0;
       font-family: "Prompt", sans-serif;
@@ -20,20 +19,21 @@
       background-repeat: no-repeat;
     }
 
+    /* กล่องกลางหน้าจอ */
+    .center-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 20px;
+    }
+
     h1 {
       color: #fff;
       margin-bottom: 40px;
       text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
       text-align: center;
-    }
-
-    /* ปรับให้ container อยู่กลางจอ */
-    .button-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      flex-grow: 1;
     }
 
     button {
@@ -47,6 +47,8 @@
       cursor: pointer;
       transition: all 0.3s ease;
       box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+      width: 80%;
+      max-width: 300px;
     }
 
     button:hover {
@@ -57,9 +59,10 @@
   </style>
 </head>
 <body>
-  <h1>ยินดีต้อนรับสู่เว็ปของเราครับ 🎬</h1>
 
-  <div class="button-container">
+  <div class="center-box">
+    <h1>ยินดีต้อนรับสู่เว็ปของเราครับ 🎬</h1>
+
     <button onclick="window.location.href='https://youtu.be/LOZ1BzfQA8M?si=kZZPn0v9mghwqYvr'">
       👩‍🏫 เพลงวิทยาลัยเทคนิคสมุทรสาคร
     </button>
@@ -72,5 +75,6 @@
       🤖 CHAT GPT
     </button>
   </div>
+
 </body>
 </html>
